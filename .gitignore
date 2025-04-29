@@ -1,0 +1,48 @@
+# General
+.DS_Store
+*.log
+*.pem
+
+# Environment files
+.env
+.env*.local
+
+# Backend
+/backend/node_modules/
+backend/.env
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.venv/
+backend/venv/
+backend/.idea/
+backend/.vscode/
+
+# Mobile (React Native Expo)
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/expo-env.d.ts
+
+# Native credentials
+mobile/*.orig.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+
+# Metro (React Native bundler)
+mobile/.metro-health-check*
+
+# Debug files
+mobile/npm-debug.*
+mobile/yarn-debug.*
+mobile/yarn-error.*
+
+# TypeScript
+mobile/*.tsbuildinfo
