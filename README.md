@@ -1,7 +1,3 @@
-Here’s the English translation of your readme:
-
----
-
 # 🌱 AgriTracker App
 
 AgriTracker App is a mobile platform designed for farmers, allowing them to **register, view, and manage personalized agricultural data**. This full-stack solution consists of a frontend built with **React Native**, a backend developed with **FastAPI**, and a **MongoDB** database.
@@ -131,7 +127,3 @@ npx expo start
 
 ## ⚠️ Disclaimer
 This project is part of my learning journey with backend development, mobile app development, and agricultural technology. The app focuses on practical use-cases for farmers and aims to provide them with tools that can simplify their field data management and decision-making.
-
----
-
-Let me know if you need any further updates!
