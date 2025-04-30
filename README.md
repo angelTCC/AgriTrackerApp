@@ -109,14 +109,6 @@ npx expo start
 - Data is tied exclusively to the authenticated user.
 - **AsyncStorage** is used to store the session token on the mobile device.
 
-## ✨ Key Features
-
-- 🧾 Secure user registration and login
-- 🌱 User-specific field data registration
-- 🗂️ Personalized data visualization
-- 📱 Intuitive mobile interface
-- 🔄 Modular and scalable backend
-
 ## 🧩 Future Enhancements
 
 - 🌍 Integration with maps (geographical field visualization)
