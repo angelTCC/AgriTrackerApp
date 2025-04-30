@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, Button, Alert, StyleSheet } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage'; // Correcta importación
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function LoginScreen({ navigation }) {
@@ -26,14 +26,14 @@ export default function LoginScreen({ navigation }) {
 
       if (response.ok) {
         await AsyncStorage.setItem('authToken', data.access_token); // Save the token
-        Alert.alert("Login correcto", `Token: ${username}`);
+        Alert.alert("Login correcto", `Welcome ${username}`);
         navigation.navigate('Home');
       } else {
         Alert.alert("Error de login", data.detail || "Credenciales incorrectas");
       }
 
     } catch (error) {
-      Alert.alert("Error de re", error.message);
+      Alert.alert("Error de red", error.message);
     }
   };
 

@@ -1,6 +1,6 @@
-import { View, TextInput, Text, ScrollView, Button, StyleSheet, Alert } from 'react-native'; // <--- Faltaba importar Alert
+import { View, TextInput, Text, ScrollView, Button, StyleSheet, Alert } from 'react-native';
 import React, { useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage'; // Correcta importación
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function HomeScreen() {
   
@@ -10,7 +10,7 @@ export default function HomeScreen() {
   const [area_size, setAreaSize] = useState('');
   const [planting_date, setPlantingDate] = useState('');
   const [harvest_date, setHarvestDate] = useState('');
-  const [userFields, setUserFields] = useState([]); // <--- Para guardar los datos del usuario
+  const [userFields, setUserFields] = useState([]);
 
 
   useEffect(() => {
