@@ -26,24 +26,13 @@ I was hired by an agricultural company operating in the Southern Highlands of Pe
 ## 🔐 Backend Features
 
 ### 🧾 User Registration
-`POST /register`  
-Registers a new user with `username`, `email`, and `password`.
-
-### 🔑 Login
-`POST /token`  
-Accepts credentials and returns a JWT token if valid.
-
-### 👤 User Profile
-`GET /users/profile`  
-Returns the authenticated user’s data (from the token).
-
-### 🌾 Get Field Data
-`GET /get-fields`  
-Returns a list of fields registered by the logged-in user.
-
-### ➕ Add New Field
-`POST /add-field-data`  
-Adds a new field record (location, crop type, etc.) to the current user.
+| **Endpoint**        | **Method** | **Description**                                                       |
+|---------------------|------------|-----------------------------------------------------------------------|
+| `/register`         | `POST`     | Registers a new user with `username`, `email`, and `password`.       |
+| `/token`            | `POST`     | Accepts user credentials and returns a valid JWT token if correct.   |
+| `/users/profile`    | `GET`      | Returns the authenticated user's profile data (requires token).      |
+| `/get-fields`       | `GET`      | Retrieves the list of fields registered by the logged-in user.       |
+| `/add-field-data`   | `POST`     | Adds a new field (location, crop type, etc.) to the user's records.  |
 
 ## 📁 Project Structure
 
