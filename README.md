@@ -2,6 +2,12 @@
 
 AgriTracker App is a mobile platform designed for farmers, allowing them to **register, view, and manage personalized agricultural data**. This full-stack solution consists of a frontend built with **React Native**, a backend developed with **FastAPI**, and a **MongoDB** database.
 
+<p float="left" style="text-align: center;" >
+  <img src="image2.jpeg" width="150" />
+  <img src="image3.jpeg" width="150" />
+  <img src="image1.jpeg" width="150" />
+</p>
+
 ## 💼 Professional Situation
 
 I was hired by an agricultural company operating in the Southern Highlands of Peru, where farmers were struggling to organize their field records (location, crops, planting dates, etc.). The main issue was the **lack of a digital tool that allowed each user to securely and personally manage their data**.
@@ -72,7 +78,7 @@ pip install fastapi uvicorn pymongo[srv]
 
 3. Run the API:
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ### 📱 Frontend (React Native)
